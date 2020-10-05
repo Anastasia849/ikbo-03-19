@@ -1,0 +1,7 @@
+Student саша 13
+Student рита 14
+Student даня 15
+Student аня 16
+Student алекс 17
+Student паша 18
+Student ира 20
