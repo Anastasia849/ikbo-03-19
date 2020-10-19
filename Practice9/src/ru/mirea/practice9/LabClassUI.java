@@ -70,5 +70,6 @@ public class LabClassUI {
     public static void main(String[] args) {
         LabClassUI app = new LabClassUI();
         app.findStudent();
+
     }
 }
