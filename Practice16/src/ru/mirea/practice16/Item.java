@@ -1,9 +1,7 @@
 package ru.mirea.practice16;
 
 public interface Item {
-    double getPrice();
-
-    String getName();
-
+    double getCost();
     String getDescription();
+    String getTitle();
 }

@@ -1,43 +1,35 @@
 package ru.mirea.practice16;
 
-final public class Drink implements Item {
-    final private double price;
-    final private String name;
-    final private String description;
+public final class Drink implements Item {
+    private final String title, description;
+    private final double cost;
 
-    public Drink(String name, String description) {
-        this.name = name;
+    public Drink(String title, String description, double cost) throws Exception {
+        this.title = title;
         this.description = description;
-        this.price = 0;
+        this.cost = cost;
+        if (title.equals("") || description.equals("") || cost == 0)
+            throw new Exception ("java.lang.IllegalArgumentException ");
     }
-
-    public Drink(double price, String name, String description) {
-        this.price = price;
-        this.name = name;
+    public Drink(String title, String description) throws Exception {
+        this.title = title;
         this.description = description;
+        this.cost = 0;
+        throw new Exception ("java.lang.IllegalArgumentException ");
     }
 
-    @Override
-    public double getPrice() {
-        return price;
+    public double getCost() {
+        return cost;
     }
 
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
     public String getDescription() {
         return description;
     }
 
-    @Override
+    public String getTitle() {
+        return title;
+    }
     public String toString() {
-        return "Drink {" +
-                "price = " + price +
-                ", name = '" + name + '\'' +
-                ", description = '" + description + '\'' +
-                '}';
+        return "Цена за 1 шт: " + cost + " Напиток: " + title;
     }
 }

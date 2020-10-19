@@ -1,76 +1,92 @@
 package ru.mirea.practice16;
 
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.HashMap;
 
-public class OrderManager implements Order {
-    private OwnLinkedList<Item> data;
+public class OrderManager  {
+    private HashMap<Integer, RestaurantOrder> res_orders;
+    private HashMap<String, InternetOrder> int_orders;
 
-    public OrderManager() {
-        this.data = new OwnLinkedList<>();
+    public OrderManager(){
+        res_orders = new HashMap<>();
+        int_orders = new HashMap<>();
     }
 
-    public OrderManager(Collection<Item> collection) {
-        this.data = new OwnLinkedList<>(collection);
+    public boolean add(int tableNumber, RestaurantOrder order) throws Exception {
+        if (res_orders.containsKey(tableNumber)){
+            throw new Exception ("OrderAlreadyAddedException");
+        }
+        else {
+            res_orders.put(tableNumber, order);
+            return true;
+        }
     }
-
-    @Override
-    public boolean add(Item item) {
-        return data.add(item);
-    }
-
-    @Override
-    public boolean delete(String name) {
-        Item item = Arrays.stream(
-                data.toArray())
-                .filter(i -> i.getName().equals(name))
-                .findFirst()
-                .orElse(null);
-        if (item == null)
+    public boolean add(String address, InternetOrder order){
+        try {
+            int_orders.put(address, order);
+            return true;
+        }
+        catch (Exception e){
             return false;
-        return data.remove(item);
+        }
     }
 
-    @Override
-    public int deleteAll(String name) {
-        return (int) Arrays.stream(
-                data.toArray())
-                .filter(i -> i.getName().equals(name))
-                .map(el -> data.remove(el))
-                .count();
+    public void removeRestaurantOrder(int tableNumber){
+        res_orders.remove(tableNumber);
     }
 
-    @Override
-    public int numOfOrders() {
-        return data.getSize();
+    public void removeInternetOrder(String address){
+        int_orders.remove(address);
     }
 
-    @Override
-    public Object[] getArray() {
-        return data.toArray();
+    public RestaurantOrder getRestaurantOrder(int tableNumber) {
+        return res_orders.get(tableNumber);
     }
 
-    @Override
-    public double getSumPrice() {
-        return (int) Arrays.stream(
-                data.toArray())
-                .mapToDouble(Item::getPrice)
-                .sum();
+    public InternetOrder getInternetOrder(String address) {
+        return int_orders.get(address);
     }
 
-    @Override
-    public Object[] getArrayOfNames() {
-        return  Arrays.stream(
-                data.toArray())
-                .map(Item::getName)
-                .toArray();
+    public double RestaurantOrdersCostSummary(){
+        double total = 0;
+        for(int key : res_orders.keySet()){
+            total += res_orders.get(key).CostTotal();
+        }
+        return total;
+    }
+    public double InternetOrdersCostSummary(){
+        double total = 0;
+        for(String key : int_orders.keySet()){
+            total += int_orders.get(key).CostTotal();
+        }
+        return total;
+    }
+    public void addDish_RestaurantOrder(int tableNumber, Dish dish){
+        res_orders.get(tableNumber).add(dish);
+    }
+    public void addDrink_RestaurantOrder(int tableNumber, Drink drink){
+        res_orders.get(tableNumber).add(drink);
+    }
+    public void addDish_InternetOrder(String address, Dish dish){
+        int_orders.get(address).add(dish);
+    }
+    public void addDrink_InternetOrder(String address, Drink drink){
+        int_orders.get(address).add(drink);
     }
 
-    @Override
-    public Object[] getSortedArray() {
-        return Arrays.stream(
-                data.toArray())
-                .sorted((o1, o2) -> (int) (o2.getPrice() - o1.getPrice()))
-                .toArray();
+    public String getAllOrders(){
+        String s = "";
+        if (!res_orders.isEmpty()) {
+            s += "Заказы в ресторане:\n";
+            for (int key : res_orders.keySet()) {
+                s += "Заказ на стол №" + key + " на сумму : " + res_orders.get(key).CostTotal() + "\n";
+            }
+        }
+        if (!int_orders.isEmpty()) {
+            s += "Заказы в интернете:\n";
+            for (String key : int_orders.keySet()) {
+                s += "Заказ по адресу: " + key + " на сумму : " + int_orders.get(key).CostTotal() + "\n";
+            }
+        }
+        return s;
     }
 }

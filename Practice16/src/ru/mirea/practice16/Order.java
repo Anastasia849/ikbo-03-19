@@ -1,20 +1,10 @@
 package ru.mirea.practice16;
 
 public interface Order {
-    boolean add(Item item);
-
-    boolean delete(String name);
-
-    int deleteAll(String name);
-
-    int numOfOrders();
-
-    Object[] getArray();
-
-    double getSumPrice();
-
-    Object[] getArrayOfNames();
-
-    Object[] getSortedArray();
+    boolean add(Dish dish);
+    boolean add(Drink drink);
+    boolean remove(String name);
+    void removeAll(String name);
+    int getSize();
+    double CostTotal();
 }
-

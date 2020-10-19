@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="569eb006-2a67-4171-97f6-bb06ccb63a79" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Dish.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Dish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Drink.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Drink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/InternetOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/InternetOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/OrderManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/OrderManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/OwnLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/OwnLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/RestaurantOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/out/production/Practice16/ru/mirea/practice16/RestaurantOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Drink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/InternetOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/InternetOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/OwnLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/RestaurantOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/RestaurantOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Practice16/src/ru/mirea/practice16/Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j6XKFi0EZmAPxXSSPdg98Rdd3R" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="569eb006-2a67-4171-97f6-bb06ccb63a79" name="Default Changelist" comment="" />
+      <created>1603125451484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603125451484</updated>
+    </task>
+    <servers />
+  </component>
+</project>
